@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import './css/App.css'
 import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import Results from './Pages/Results';
+import Home from './pages/Home';
+import Results from './pages/Results';
 import { Navigate } from 'react-router-dom';
 
 import Signup from './pages/Signup';
