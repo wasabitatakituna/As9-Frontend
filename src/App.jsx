@@ -30,12 +30,13 @@ function App() {
     // };
 
     useEffect(() => {
-        // fetch('http://localhost:4000/api/auth/me', {
-        //     credentials: 'include'
-        // })
-        // .then(res => res.ok ? res.json() : null)
-        // .then(data => setUser(data))
-        fetch(`${api}/api/flights`);
+        console.log(api);
+        fetch(`${api}/api/auth/me`, {
+            credentials: 'include'
+        })
+        .then(res => res.ok ? res.json() : null)
+        .then(data => setUser(data))
+        // fetch(`${api}/api/auth/me`);
     }, []);
 
     const handleLogin = (user) => {

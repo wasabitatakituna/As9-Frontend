@@ -5,7 +5,7 @@ function Profile({ token }) {
     const api = import.meta.env.VITE_API_URL;
     
     useEffect(() => {
-        fetch(`${api}/api//auth/me`, {
+        fetch(`${api}/api/auth/me`, {
             // headers: {
             //     Authorization: `Bearer ${token}`,
             // },
