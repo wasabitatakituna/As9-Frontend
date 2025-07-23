@@ -15,6 +15,7 @@ function App() {
     // const [token, setToken] = useState(localStorage.getItem('token') || '');
     const [user, setUser] = useState(null); // user state tracking
     const [message, setMessage] = useState('');
+    const api = import.meta.env.VITE_API_URL;
 
     // const handleLogin = (newToken) => {
     //     localStorage.setItem('token', newToken);
@@ -34,7 +35,6 @@ function App() {
         // })
         // .then(res => res.ok ? res.json() : null)
         // .then(data => setUser(data))
-        const api = import.meta.env.VITE_API_URL;
         fetch(`${api}/api/flights`);
     }, []);
 
